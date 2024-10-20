@@ -1,3 +1,3 @@
 # Car sharing web
 
-Basic web for car-sharing layout
+Basic web layout for car-sharing
