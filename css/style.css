@@ -1,0 +1,585 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FF0000;
+    --secondary-color: #FFFFFF;
+    --blog-font-color: #6A6A6A;
+    --service-bg-color: #28272C;
+    --service-font-primary-color: #FFFFFF;
+    --service-font-secondary-color: #B2B2B2;
+
+    --desc-letter-spacing: 0;
+    --primary-font: 'Nunito-Sans', sans-serif;
+    
+    --container-width: 1088px --btn-padding: 22px 55px;
+
+    --btn-font: normal normal bold 16px/22px Nunito Sans;
+    --btn-box-shadow: box-shadow: 0px 3px 6px #FF00004D;
+    --btn-radius: 40px;
+
+    --section-padding-top: 60px;
+
+    --blog-font-h3: normal normal normal 19px/26px Nunito Sans;
+    --blog-font-desc: normal normal 300 14px/19px Open Sans;
+    --blog-btn-font: normal normal bold 14px/19px Nunito Sans;
+
+    --service-font-h3: normal normal normal 18px/26px Nunito Sans;
+    --service-font-desc: normal normal normal 14px/19px Open Sans;
+    --service-btn-font: normal normal bold 14px/19px Nunito Sans;
+
+    --eula-font: normal normal 300 10px/14px Open Sans;
+    --form-border: 1px solid #D1D1D1;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~ */
+
+.main-content {
+    background: url(../images/Image.jpg) 0% 0% no-repeat padding-box;
+    background-size: cover;
+    background-position: center;
+    height: 807px;
+}
+
+.container {
+    margin: 0 auto;
+    width: var(--container-width);
+    height: 88px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00000066;
+    border-bottom: 2px solid #FFFFFF33;
+}
+
+.logo {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.logo img {
+    width: 31px;
+}
+
+.logo h1 {
+    color: var(--primary-color);
+    margin-left: 5px;
+    font-family: var(--primary-font);
+}
+
+.logo span {
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.nav-menu-list {
+    display: flex;
+    width: 486px;
+}
+
+.nav-menu-list li {
+    height: 88px;
+    width: 128px;
+    font: normal normal bold 16px/22px Nunito Sans;
+}
+
+.nav-menu-list li:hover {
+    background: #FFFFFF33 0% 0% no-repeat padding-box;
+}
+
+.nav-menu-list a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~ BANNER ~~~~~~~~~~~~~~~~~~~~~ */
+
+ .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    width: var(--container-width);
+    height: 719px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.banner>* {
+    display: flex;
+    justify-content: center;
+    width: 1046px;
+}
+
+.banner-title {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font: normal normal 800 90px/90px Nunito Sans;
+}
+
+.banner-text {
+    font: normal normal bold 16px/22px Nunito Sans;
+    text-align: center;
+    letter-spacing: var(--desc-letter-spacing);
+    color: var(--secondary-color);
+    margin-top: 35px;
+}
+
+.banner .buttons button {
+    border: none;
+    border-radius: var(--btn-radius);
+    text-transform: uppercase;
+    height: 66px;
+    width: 220px;
+    font: var(--btn-font);
+    letter-spacing: var(--desc-letter-spacing);
+    margin: 35px 20px;
+    box-shadow: var(--btn-box-shadow);
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.button-secondary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+.arrow-button {
+    display: flex;
+    width: var(--container-width);
+    justify-content: center;
+    align-items: center;
+}
+
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    top: 778px;
+    position: absolute;
+    border-radius: 50%;
+    background: var(--primary-color) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+}
+
+.next:hover {
+    cursor: pointer;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~ BLOG ~~~~~~~~~~~~~~~~~~~~~ */
+
+.blog {
+    width: var(--container-width);
+    height: 643px;
+    background-color: var(--secondary-color);
+    margin-top: var(--section-padding-top);
+}
+
+.blog h2 {
+    font: normal normal bold 35px/47px Nunito Sans;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--container-width);
+    margin-bottom: 1em;
+}
+
+.blog h2:before,
+.blog h2:after {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    height: 3px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.blog-article {
+    width: 352px;
+    height: 434px;
+    gap: 10px;
+    font: var(--blog-font-desc);
+    color: var(--blog-font-color);
+    text-align: left;
+    align-items: left;
+
+}
+
+.blog-article img {
+    height: 234px;
+
+}
+
+.blog-article h3 {
+    margin: 10px 0;
+    font: var(--blog-font-h3);
+    text-transform: uppercase;
+}
+
+.blog-article p {
+    margin: 20px 0;
+    width: 260px;
+}
+
+.blog-article button {
+    box-shadow: var(--btn-box-shadow);
+    background: var(--primary-color) 0% 0% no-repeat padding-box;
+    border-radius: var(--btn-radius);
+    border: none;
+    color: var(--secondary-color);
+    font: var(--blog-btn-font);
+    text-transform: uppercase;
+    width: 142px;
+    height: 40px;
+    letter-spacing: var(--desc-letter-spacing);
+    text-align: center;
+
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~ SERVICE ~~~~~~~~~~~~~~~~~~~~~ */
+
+.service {
+    width: var(--container-width);
+    height: 643px;
+    background-color: var(--service-bg-color);
+    padding-top: var(--section-padding-top);
+}
+
+.service h2 {
+    font: normal normal bold 35px/47px Nunito Sans;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--container-width);
+    margin-bottom: 1em;
+    color: #FFFFFF;
+}
+
+.service h2:before,
+.service h2:after {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    height: 3px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--container-width);
+    gap: 2em;
+}
+
+.service-article {
+    width: 231px;
+    height: 361px;
+    font: var(--service-font-desc);
+    color: var(--service-font-primary-color);
+    text-align: left;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-article img {
+    height: 170px;
+    width: 170px;
+}
+
+.service-article h3 {
+    font: var(--service-font-h3);
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.service-article p {
+    color: var(--service-font-secondary-color);
+    flex-grow: 1;
+}
+
+.service-article button {
+    box-shadow: var(--btn-box-shadow);
+    background: var(--primary-color) 0% 0% no-repeat padding-box;
+    border-radius: var(--btn-radius);
+    border: none;
+    color: var(--secondary-color);
+    font: var(--service-btn-font);
+    text-transform: uppercase;
+    width: 142px;
+    height: 40px;
+    text-align: center;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~ CONTACT ~~~~~~~~~~~~~~~~~~~~~ */
+
+.contact {
+    width: var(--container-width);
+    height: 643px;
+    padding-top: var(--section-padding-top);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h2 {
+    font: normal normal bold 35px/47px Nunito Sans;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--container-width);
+    margin-bottom: 1em;
+    color: var(--service-bg-color);
+}
+
+.contact h2:before,
+.contact h2:after {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    height: 3px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: var(--container-width);
+    gap: 1em;
+    height: 316px;
+}
+
+.contact-container img {
+    width: 444px;
+    align-self: flex-start;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~ FORM ~~~~~~~~~~~~~~~~~~~~~ */
+
+.form-eula-container {
+    display: flex;
+    flex-direction: column;
+    width: 444px;
+    margin-left: 10px;
+    height: 370px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.form-container input {
+    height: 38px;
+    width: 444px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: var(--form-border);
+}
+
+.form-container textarea {
+    height: 38px;
+    width: 444px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: var(--form-border);
+}
+
+.form-container input::placeholder {
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: var(--desc-letter-spacing);
+    color: var(--service-font-secondary-color);
+}
+
+.form-container textarea::placeholder {
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: var(--desc-letter-spacing);
+    color: var(--service-font-secondary-color);
+}
+
+.form-eula-container textarea:nth-child(3) {
+    flex-grow: 1;
+}
+
+.form-container input:focus {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 1px 6px #FF00004D;
+}
+
+.form-container textarea:focus {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 1px 6px #FF00004D;
+}
+
+.eula {
+    display: flex;
+    align-items: start;
+}
+
+.eula input {
+    appearance: none;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 22px;
+    height: 22px;
+    border-radius: 8px;
+    border: var(--form-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eula input:checked {
+    background: white;
+    border-color: var(--primary-color);
+}
+
+.eula input:checked::after {
+    content: url(../images/Icon\ Check.svg);
+}
+
+
+.eula p {
+    color: var(--service-font-secondary-color);
+    font: var(--eula-font);
+    letter-spacing: var(--desc-letter-spacing);
+    width: 412px;
+}
+
+.btn-send  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 40px;
+    align-self: flex-end;
+}
+
+.btn-send button {
+    border-radius: var(--btn-radius);
+    box-shadow: var(--btn-box-shadow);
+    font: var(--btn-font);
+    text-transform: uppercase;
+    border: 1px solid var(--primary-color);
+    width: inherit;
+    height: inherit;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    color: var(--primary-color);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~ */
+
+.footer {
+    Height: 233px;
+    width: 100%;
+    background-color: var(--service-bg-color);
+}
+
+.page-footer {
+    width: var(--container-width);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    background: transparent 0% 0% no-repeat padding-box;
+}
+
+.footer-logo h1 {
+    color: var(--primary-color);
+    margin-left: 5px;
+    font: normal normal 800 25px/34px Nunito Sans;
+}
+
+.footer-logo span {
+    color: var(--secondary-color);
+    font: normal normal bold 25px/34px Nunito Sans;
+}
+
+.footer-nav-menu {
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font: normal normal bold 14px/19px Nunito Sans;
+}
+
+.footer-nav-menu li {
+    margin: 0.5em 3em 0 0;
+}
+
+.footer-nav-menu li:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.page-footer p {
+    color: #D1D1D1;
+    font: normal normal 300 12px/16px Nunito Sans;
+    align-self: flex-end;
+}
+
